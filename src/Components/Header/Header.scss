@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 20px;
+  align-items: center;
+  margin-top: 10px;
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  nav a {
+    margin-left: 60px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: right;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  header {
+    padding: 0;
+    padding-top: 15px;
+    margin-top: 0;
+
+    .logo-header {
+      font-size: 14px;
+      width: 150px;
+    }
+
+    nav a {
+      margin-left: 15px;
+      font-size: 12px;
+    }
+  }
+}
