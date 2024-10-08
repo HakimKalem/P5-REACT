@@ -1,12 +1,12 @@
-.body {
+.home-body {
   margin-right: 90px;
   margin-left: 90px;
   font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (max-width: 844px) {
-  .body {
+  .home-body {
     margin-right: 15px;
     margin-left: 15px;
   }
-}/*# sourceMappingURL=Home.css.map */
+} /*# sourceMappingURL=Home.css.map */

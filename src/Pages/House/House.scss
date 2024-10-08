@@ -1,0 +1,176 @@
+.house-page {
+  padding: 0px 90px;
+}
+
+.house-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.house-cover {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+
+.house-info {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.house-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.house-title {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: xx-large;
+  color: #ff6060;
+  margin: 0;
+}
+
+p {
+  font-size: 23px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.host-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+}
+
+span {
+  color: #ff6060;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.host-picture {
+  border-radius: 50%;
+  margin-left: 10px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.rating {
+  display: flex;
+  font-size: 40px;
+  margin-top: 15px;
+}
+
+.star-filled {
+  color: #ff6060;
+}
+
+.star-empty {
+  color: #e3e3e3;
+}
+
+.tags-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0;
+  margin-top: 10px;
+
+  .tag {
+    background-color: #ff6060;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 13px;
+    font-size: 17px;
+    font-weight: 600;
+    min-width: 100px;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.labels details {
+  width: 47%;
+}
+
+.labels summary {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+}
+
+.labels p,
+.labels ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 844px) {
+  .logement-page {
+    padding: 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .house-info {
+    flex-direction: column;
+  }
+  .house-title {
+    width: 100%;
+    h1 {
+      font-size: 25px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 17px;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+  }
+  .host-rating {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .host-picture {
+    width: 60px;
+    height: 60px;
+  }
+
+  .host {
+    span {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  .tags {
+    .tag {
+      font-size: 13px;
+      border-radius: 10px;
+      min-width: 73px;
+    }
+  }
+}

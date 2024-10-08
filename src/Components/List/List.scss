@@ -1,0 +1,104 @@
+.list {
+  border: 1px solid #ccc; // Bordure autour du dropdown
+  border-radius: 5px; // Arrondir les coins
+  margin: 10px 0; // Marge entre les dropdowns
+  overflow: hidden; // Évite que le contenu dépasse
+  transition: all 0.3s ease; // Animation douce pour l'expansion
+}
+
+.labels {
+  .list {
+    border: none;
+    width: 45%;
+    margin-left: 0;
+  }
+  .list-content {
+    width: 95%;
+  }
+}
+
+.list-header {
+  display: flex; // Utilise flexbox pour aligner les éléments
+  justify-content: space-between; // Espace entre le titre et l'icône
+  align-items: center; // Aligne verticalement les éléments
+  background-color: #ff6060; // Couleur de fond du header
+  cursor: pointer; // Curseur pointer sur le header
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+
+  h2 {
+    color: white;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+}
+
+.list-icon {
+  color: white;
+  transition: transform 0.3s ease;
+  margin-right: 20px;
+  font-size: 30px; // Transition pour l'icône
+}
+
+.list-icon.expanded {
+  transform: rotate(180deg); // Fait pivoter l'icône lors de l'expansion
+}
+
+.list-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #f7f7f7;
+  color: #333;
+  padding: 0 10px;
+  border-radius: 0 0 5px 5px;
+  width: 98.5%;
+  font-size: larger; // Bordure entre le header et le corps
+}
+
+.list-body.expanded {
+  max-height: 100px;
+  overflow: auto;
+  padding: 20px; //Affiche le contenu lorsqu'il est étendu
+}
+
+@media screen and (max-width: 844px) {
+  .list {
+    margin-left: 0;
+    width: 95%;
+
+    .list-header {
+      height: 40px;
+      h3 {
+        font-size: 25px;
+        font-weight: 600;
+      }
+    }
+    .list-content {
+      font-size: 15px;
+      width: 96%;
+    }
+  }
+
+  .labels {
+    flex-direction: column;
+    .list {
+      margin-bottom: 0;
+      margin-top: 30px;
+      margin-left: 0;
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+    .list-header {
+      height: 30px;
+      min-width: 290px;
+    }
+    .list-content {
+      font-size: 15px;
+      width: 195%;
+    }
+  }
+}
