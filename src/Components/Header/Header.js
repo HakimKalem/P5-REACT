@@ -13,8 +13,8 @@ const Header = () => {
         <img className="logo-kasa" src={logo} alt="Logo Kasa" />
       </Link>
       <nav>
-        <a href="#Accueil">Accueil</a>
-        <a href="#a-propos">A propos</a>
+        <a href="/">ACCUEIL</a>
+        <a href="/about">A PROPOS</a>
       </nav>
     </header>
   );

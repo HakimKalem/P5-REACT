@@ -16,7 +16,7 @@
 }
 
 @media screen and (max-width: 1200px) and (min-width: 844px) {
-  .card-list {
+  .card-map {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
@@ -29,7 +29,7 @@
     margin-top: 20px;
     margin-bottom: 0;
 
-    .card-list {
+    .card-map {
       display: flex;
       flex-direction: column;
       grid-template-columns: none;

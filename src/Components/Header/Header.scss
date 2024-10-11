@@ -1,13 +1,13 @@
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 5px;
   background-color: white;
   margin-bottom: 20px;
   align-items: center;
   margin-top: 10px;
 
-  .logo {
+  .logo-kasa {
     font-size: 24px;
     font-weight: bold;
   }
@@ -21,6 +21,11 @@ header {
     text-align: right;
     font-family: "Montserrat", sans-serif;
   }
+
+  nav a.active {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+  }
 }
 
 @media screen and (max-width: 844px) {
@@ -29,14 +34,15 @@ header {
     padding-top: 15px;
     margin-top: 0;
 
-    .logo-header {
+    .logo-kasa {
       font-size: 14px;
       width: 150px;
     }
 
     nav a {
       margin-left: 15px;
-      font-size: 12px;
+      font-size: 13px;
+      font-family: "Montserrat";
     }
   }
 }

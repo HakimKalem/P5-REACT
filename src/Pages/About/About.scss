@@ -1,0 +1,44 @@
+.main {
+  padding: 0 90px;
+}
+
+.labels-about {
+  margin: 0 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-home {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+  background-image: url("../../about-banner.png");
+  border-radius: 30px;
+  margin-bottom: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 844px) {
+  .main {
+    padding: 0 40px;
+  }
+
+  .banner-home {
+    height: 15px;
+    border-radius: 15px;
+    margin-top: 25px;
+  }
+
+  .banner-home h1 {
+    display: none;
+  }
+
+  .labels-about {
+    margin: 0;
+  }
+
+  footer {
+    height: 230px;
+  }
+}

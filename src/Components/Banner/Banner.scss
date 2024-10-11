@@ -1,13 +1,7 @@
-.banner {
-  margin: 0 40px;
-}
-
 .banner-home {
   background-size: cover;
   background-position: center;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
-    url("../../banner.png");
   border-radius: 30px;
   margin-bottom: 30px;
   height: 223px;
@@ -29,7 +23,7 @@
 }
 
 @media screen and (max-width: 844px) {
-  .barre {
+  .banner-home {
     height: 20px;
     padding: 50px 0;
     border-radius: 20px;

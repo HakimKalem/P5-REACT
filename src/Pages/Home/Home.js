@@ -5,15 +5,17 @@ import MapCard from "../../Components/MapCard/MapCard";
 import Footer from "../../Components/Footer/Footer";
 import "./Home.scss";
 
+const homeImage = require("../../banner.png");
+
 const Home = () => {
   return (
     <div>
       <div className="home-body">
         <Header />
-        <Banner />
+        <Banner backgroundImage={homeImage} />
         <MapCard />
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };

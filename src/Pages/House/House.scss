@@ -32,12 +32,13 @@
 .house-title {
   display: flex;
   flex-direction: column;
+  font-family: "Montserrat";
 }
 
 h1 {
-  font-size: xx-large;
   color: #ff6060;
   margin: 0;
+  font-weight: 500;
 }
 
 p {
@@ -79,11 +80,11 @@ span {
   margin-top: 15px;
 }
 
-.star-filled {
+.star i.fa-solid {
   color: #ff6060;
 }
 
-.star-empty {
+.star i.fa-regular {
   color: #e3e3e3;
 }
 
@@ -107,6 +108,7 @@ span {
 }
 
 .labels {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -130,7 +132,7 @@ span {
 }
 
 @media screen and (max-width: 844px) {
-  .logement-page {
+  .house-page {
     padding: 15px;
     padding-bottom: 0;
     padding-top: 0;
@@ -153,10 +155,12 @@ span {
   .host-rating {
     justify-content: space-between;
     flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 20px;
   }
   .host-picture {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
 
   .host {
@@ -166,7 +170,7 @@ span {
     }
   }
 
-  .tags {
+  .tags-container {
     .tag {
       font-size: 13px;
       border-radius: 10px;
