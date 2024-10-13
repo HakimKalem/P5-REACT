@@ -1,23 +1,28 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import houses from "../../houses.json";
 import "./House.scss";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import ImageSlider from "../../Components/ImageSlider/ImageSlider";
 import List from "../../Components/List/List";
-import Error from "../../Components/Error/Error";
 
 const House = () => {
   const { id } = useParams();
   const [house, setHouse] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const pickHouse = houses.find((item) => item.id === id);
-    setHouse(pickHouse);
-  }, [id]);
 
-  if (!house) return <Error />;
+    if (!pickHouse) {
+      navigate("/404", { replace: true });
+    } else {
+      setHouse(pickHouse);
+    }
+  }, [id, navigate]);
+
+  if (!house) return null;
 
   return (
     <div>
