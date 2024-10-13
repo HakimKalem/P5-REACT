@@ -15,7 +15,7 @@ const About = () => {
           <Header />
         </div>
         <div>
-          <Banner backgroundImage={aboutImage} className="banner-home" />
+          <Banner backgroundImage={aboutImage} hideText={true} />
         </div>
         <div className="labels-about">
           <List

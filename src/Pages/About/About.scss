@@ -24,14 +24,13 @@
     padding: 0 40px;
   }
 
-  .banner-home {
-    height: 15px;
-    border-radius: 15px;
-    margin-top: 25px;
+  .hidden {
+    display: none;
   }
 
-  .banner-home h1 {
-    display: none;
+  .banner {
+    border-radius: 15px;
+    margin-top: 25px;
   }
 
   .labels-about {
@@ -39,6 +38,10 @@
   }
 
   footer {
-    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
   }
 }

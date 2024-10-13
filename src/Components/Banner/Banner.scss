@@ -1,4 +1,4 @@
-.banner-home {
+.banner {
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -10,7 +10,7 @@
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-  h1 {
+  .banner-text {
     color: white;
     font-size: 36px;
     text-align: center;
@@ -23,14 +23,14 @@
 }
 
 @media screen and (max-width: 844px) {
-  .banner-home {
-    height: 20px;
+  .banner {
+    height: 50px;
     padding: 50px 0;
     border-radius: 20px;
     margin-top: 30px;
     margin-bottom: 0;
 
-    h1 {
+    .banner-text {
       font-size: 25px;
       text-align: left;
       margin-left: 15px;

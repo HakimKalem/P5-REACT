@@ -1,16 +1,18 @@
 import React from "react";
 import "./Banner.scss";
 
-const Banner = ({ backgroundImage }) => {
+const Banner = ({ backgroundImage, hideText }) => {
   return (
-    <div className="banner">
+    <div>
       <div
-        className="banner-home"
+        className="banner"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),url(${backgroundImage})`,
         }}
       >
-        <h1>Chez vous, partout et ailleurs</h1>
+        <h1 className={`banner-text ${hideText ? "hidden" : ""}`}>
+          Chez vous, partout et ailleurs
+        </h1>
       </div>
     </div>
   );
