@@ -4,9 +4,6 @@ import logo from "./LOGO.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  //state (ettatt,donnees)
-  //comportmentts
-  //affichage (return)
   return (
     <header className="header">
       <Link to="/">

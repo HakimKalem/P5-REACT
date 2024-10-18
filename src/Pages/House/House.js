@@ -60,7 +60,6 @@ const House = () => {
               </div>
 
               <div className="rating-container">
-                {console.log("house.rating:", house.rating)}
                 {Array(5)
                   .fill(0)
                   .map((_, index) => (
@@ -74,7 +73,7 @@ const House = () => {
                       {index < house.rating ? (
                         <i className="fa-solid fa-star"></i>
                       ) : (
-                        <i className="fa-regular fa-star"></i> // Étoile vide
+                        <i className="fa-regular fa-star"></i>
                       )}
                     </span>
                   ))}
