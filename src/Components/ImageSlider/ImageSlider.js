@@ -28,11 +28,17 @@ const ImageSlider = ({ pictures }) => {
           </button>
         </>
       )}
-      <img
-        src={pictures[activeIndex]}
-        alt="logement"
-        className="slider-image"
-      />
+      <div className="slider-image-container">
+        <img
+          src={pictures[activeIndex]}
+          alt="logement"
+          className="slider-image"
+        />
+
+        <div className="image-slider-indicator">
+          {activeIndex + 1}/{pictures.length}
+        </div>
+      </div>
     </div>
   );
 };
